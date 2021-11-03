@@ -19,7 +19,7 @@ export class LectorQrPage implements OnInit {
   scannerQR(){
     this.barcodeScann.scan().then(
       barcodeData=>{
-        this.mensaje(barcodeData);
+        this.mensaje(barcodeData.text);
       }
     )
   }
